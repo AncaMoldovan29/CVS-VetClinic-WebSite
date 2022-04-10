@@ -1,0 +1,88 @@
+<div
+  class="m-5 col-5 text-info position-absolute top-50 start-50 translate-middle"
+>
+  <form class="row g-3" action="?page=sendapp" method="POST">
+    <div class="col-md-6">
+      <label for="Name" class="form-label">Nume Proprietar</label>
+      <input type="text" class="form-control" id="Name" name="Name" />
+    </div>
+    <div class="col-md-6">
+      <label for="petName" class="form-label">Nume animal:</label>
+      <input type="text" class="form-control" id="petName" name="petName" />
+    </div>
+    <div class="col-12">
+      <label for="nrTel" class="form-label">Numar de telefon:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nrTel"
+        placeholder="0745551002"
+        name="nrTel"
+      />
+    </div>
+    <div class="col-12">
+      <label for="anamneza" class="form-label">Problema animalului</label>
+      <input
+        type="text"
+        class="form-control"
+        id="anamneza"
+        placeholder="Ce simptome prezinta?"
+        name="anamneza"
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="ora" class="form-label"
+        >Ora la care doriti programarea?</label
+      >
+      <select class="form-select" id="ora" name="ora">
+        <option selected>09:00</option>
+        <option>10:00</option>
+        <option>11:00</option>
+        <option>12:00</option>
+        <option>13:00</option>
+        <option>14:00</option>
+        <option>15:00</option>
+        <option>16:00</option>
+        <option>17:00</option>
+        <option>18:00</option>
+        <option>19:00</option>
+        <option>20:00</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="ziua" class="form-label">Ziua</label>
+      <select id="ziua" class="form-select" name="ziua">
+        <option selected>Luni</option>
+        <option>Marti</option>
+        <option>Miercuri</option>
+        <option>Joi</option>
+        <option>Vineri</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="specie" class="form-label">Specie</label>
+      <select id="specie" class="form-select" name="specie">
+        <option selected>Caine</option>
+        <option>Pisica</option>
+        <option>Animal exotic</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="contact"
+          name="contact"
+        />
+        <label class="form-check-label" for="contact">
+          Vreau sa fiu contactat telefonic!
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-info">Programeaza-ma</button>
+    </div>
+  </form>
+</div>
+<div id="notif"></div>

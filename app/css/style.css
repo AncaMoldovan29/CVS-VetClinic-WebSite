@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(14, 14, 48);
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(6, 17, 58, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../img/animal.jpg.jpg);
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  margin: 0;
+}
+.floating_circle {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  border: 1px solid black;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.floating_circle img {
+  border-radius: 50%;
+  box-shadow: 0px 10px 50px black;
+  margin: 10px;
+}
+.img {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(59, 59, 104);
+}
+
+.img:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#notif {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.msg {
+  padding: 2rem;
+  color: rgb(75, 165, 177);
+  background-color: transparent;
+  border: 3px solid #42e9f5;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.buttontrat {
+  background-color: transparent;
+  color: #42c2f5;
+  border: 2px solid #42e9f5;
+
+  align-items: center;
+
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(73, 228, 255, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.buttontrat:active,
+.buttontrat:hover {
+  background-image: linear-gradient(144deg, #216b9c, #499dec 50%, #bbd3ee);
+  color: black;
+  outline: 0;
+}
+@media (min-width: 768px) {
+  .buttontrat {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6,
+#image7 {
+  display: none;
+}
